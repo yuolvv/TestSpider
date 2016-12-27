@@ -78,7 +78,7 @@ class mzitu():
             os.chdir(os.path.join('D:\mzitu', path))
 
             href = a['href']
-            # 调用html函数把href参数传递过去！href是啥还记的吧？ 就是套图的地址哦！！不要迷糊了哦！
+            # 调用html函数把href参数传递过去！href是套图的地址！
             self.html(href)
 
 

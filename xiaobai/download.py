@@ -66,7 +66,7 @@ class download():
                     return self.get(url,timeout,proxy)
         else:
             try:
-                # 将从self.iplist中获取的字符串处理成我们需要的格式（处理了些，什么自己看哦，这是基础呢）
+                # 将从self.iplist中获取的字符串处理成我们需要的格式
                 IP = ''.join(str(random.choice(self.iplist)).strip())
                 # 构造成一个代理
                 proxy = {'http': IP}
@@ -88,5 +88,6 @@ class download():
 
 #DownLoad = download()
 #print(DownLoad.get("mzitu.com",3))
+down = download()
 request = download()
 
